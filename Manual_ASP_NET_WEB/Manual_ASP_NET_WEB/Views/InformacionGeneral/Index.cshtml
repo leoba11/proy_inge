@@ -1,0 +1,29 @@
+﻿
+@model Manual_ASP_NET_WEB.ViewModels.InformacionGeneralViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+<h2>Información general del sistema</h2>
+<br />
+
+
+
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Cantidad de médicos
+        <span class="badge badge-primary badge-pill">@Model.CantidadMedicos</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Cantidad de pacientes
+        <span class="badge badge-primary badge-pill">@Model.CantidadPacientes</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Cantidad de pacientes con peso mayor a 60
+        <span class="badge badge-primary badge-pill">@Model.CantidadPacientes60</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Cantidad de consultas
+        <span class="badge badge-primary badge-pill">@Model.CantidadConsultas</span>
+    </li>
+</ul>
